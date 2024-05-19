@@ -1,0 +1,166 @@
+:root {
+  --font-family: 'Fira Sans', sans-serif;
+  --second-family: 'Fira Mono', sans-serif;
+  --third-family: 'Nova Cut', sans-serif;
+  --color-grey-50: rgba(0, 0, 0, 0.5);
+  --color-grey-25: rgba(0, 0, 0, 0.25);
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+/* Глобальне скидання стилів */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* Загальні стилі */
+
+body {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.author {
+  font-size: 12px;
+  color: var(--color-grey-50);
+}
+
+/* Контейнер */
+
+.container {
+  max-width: 1920px;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Хедер */
+
+.decoration-dummy {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--color-grey-25);
+}
+
+.logo {
+  font-family: var(--third-family);
+  font-size: 72px;
+  line-height: 1;
+  text-align: center;
+}
+
+.date {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: var(--color-grey-50);
+}
+
+/* Хіро */
+
+.hero-header {
+  font-size: 80px;
+  line-height: 1.05;
+  text-align: center;
+}
+
+/* Милі кошенята */
+
+.header-big {
+  font-size: 64px;
+  line-height: 1.125;
+}
+
+.header-medium {
+  font-size: 48px;
+  line-height: 1.67;
+}
+
+.header-small {
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+.header-tiny {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.67;
+}
+
+.image-dummy-big {
+  width: 726px;
+  height: 484px;
+  background-color: var(--color-grey-25);
+}
+
+.image-dummy-caption {
+  font-size: 12px;
+}
+
+.image-dummy {
+  width: 426px;
+  height: 284px;
+  background-color: var(--color-grey-25);
+}
+
+/* Таблиця з прогнозом погоди */
+
+.weather-head {
+  background-color: var(--color-black);
+}
+
+.weather-header {
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.weather-time {
+  font-weight: 400;
+  font-size: 12px;
+  background-color: var(--color-grey-25);
+}
+
+.weather-data {
+  font-family: var(--second-family);
+  font-size: 12px;
+}
