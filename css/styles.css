@@ -31,6 +31,7 @@ ol {
 /* Загальні стилі */
 
 body {
+  padding: 72px 72px 56px;
   font-family: var(--font-family);
   font-size: 18px;
   line-height: 1.33;
@@ -61,19 +62,27 @@ img {
 .author {
   font-size: 12px;
   color: var(--color-grey-50);
+  margin-bottom: 24px;
 }
 
 /* Контейнер */
 
-.container {
+/* .container {
   max-width: 1920px;
   padding-left: 72px;
   padding-right: 72px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* Хедер */
+
+.header {
+  display: grid;
+  grid-template-columns: 88px 1fr 88px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--color-grey-25);
+}
 
 .decoration-dummy {
   width: 88px;
@@ -87,6 +96,7 @@ img {
   font-size: 72px;
   line-height: 1;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .date {
@@ -98,6 +108,10 @@ img {
 
 /* Хіро */
 
+.hero {
+  border-bottom: 1px solid var(--color-grey-25);
+}
+
 .hero-header {
   font-size: 80px;
   line-height: 1.05;
@@ -106,19 +120,29 @@ img {
 
 /* Милі кошенята */
 
+.cute-cats {
+  display: grid;
+  grid-template-columns: 576px 726px 426px;
+  gap: 24px;
+  border-bottom: 1px solid var(--color-grey-25);
+}
+
 .header-big {
   font-size: 64px;
   line-height: 1.125;
+  margin-bottom: 4px;
 }
 
 .header-medium {
   font-size: 48px;
-  line-height: 1.67;
+  line-height: 1.17;
+  margin-bottom: 8px;
 }
 
 .header-small {
   font-size: 36px;
   line-height: 1.22;
+  margin-bottom: 8px;
 }
 
 .header-tiny {
@@ -131,6 +155,7 @@ img {
   width: 726px;
   height: 484px;
   background-color: var(--color-grey-25);
+  margin-bottom: 12px;
 }
 
 .image-dummy-caption {
