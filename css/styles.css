@@ -166,26 +166,55 @@ img {
   width: 426px;
   height: 284px;
   background-color: var(--color-grey-25);
+  margin-bottom: 24px;
+}
+
+.text-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 /* Таблиця з прогнозом погоди */
 
-.weather-head {
-  background-color: var(--color-black);
+.weather {
+  display: grid;
+  grid-template-columns: 1fr 726px;
+}
+
+.weather-table {
+  display: grid;
+  /* grid-template-areas:
+    'void monday tuesday wednesday thursday friday'
+    '8am mon8 tue8 wed8 thur8 fri8'
+    '10am mon10 tue10 wed10 thur10 frid10'
+    '12pm mon12 tue12 wed12 thur12 frid12'
+    '2pm mon2 tue2 wed2 thur2 frid2'
+    '4pm mon4 tue4 wed4 thur4 frid4'; */
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .weather-header {
   font-weight: 400;
   color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 12px;
+  border: 1px solid var(--color-black);
 }
 
 .weather-time {
   font-weight: 400;
   font-size: 12px;
   background-color: var(--color-grey-25);
+  padding: 12px;
+  border: 1px solid var(--color-black);
 }
 
 .weather-data {
   font-family: var(--second-family);
   font-size: 12px;
+  padding: 12px;
+  border: 1px solid var(--color-black);
 }
